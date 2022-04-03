@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Teste JavaScript</title>
+    <meta charset="UTF-8"/>
+    <script>
+        function acendeLampada () {
+            document.getElementById("luz").src="_imagens/lampada-acesa.jpg";
+            /*Função é conjunto de comnados ou uma rotina que vai acontecer,quando eu disparo essa sequencia*/  
+/* passar o mouse por cima do objeto, chamada on */
+        } /* ()parantes Parâmetros*/  /*{}Colchetes códigos*/
+        function apagaLampada() {
+            document.getElementById("luz").src="_imagens/lampada-apagada.jpg";
+        }
+        function quebralampada(){
+            document.getElementById("luz").src="_imagens/lampada-quebrada.jpg";
+        }
+    </script>
+</head>
+<body>
+    <h1>Acende a Lâmpada</h1>
+    <img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="acendeLampada()"onmouseout="apagaLampada()" onclick="quebralampada()"/>
+</body>
+</html>
+
+    

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Teste JavaScript</title>
+    <meta charset="UTF-8"/>
+    <script>
+        var quebrada = false;
+        function mudaLampada(tipo) {
+            if (!quebrada) {
+            document.getElementById("luz").src = "_imagens/" + tipo + ".jpg";
+            if (tipo == 'lampada-quebrada') {
+                quebrada = true; 
+             }
+            /*Função é conjunto de comnados ou uma rotina que vai acontecer,quando eu disparo essa sequencia*/  
+/* passar o mouse por cima do objeto, chamada on */
+        } /* ()parantes Parâmetros são valores que podem ser passado do seu codigo principal para uma determinada função e ela vai reagir  */  /*{}Colchetes códigos*/
+        
+    </script>
+</head>
+<body>
+    <h1>Acende a Lâmpada</h1>
+    <img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')"/>
+</body>
+</html>
+
+    
